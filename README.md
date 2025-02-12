@@ -1,7 +1,7 @@
 <h1 align="center">Привет 👋, меня зовут Дмитрий</h1>
 <h3 align="center">Home-work-7</h3>
 
-- 🔭 Сейчас я работаю над ** @ use mixin veribles **
+- 🔭 Сейчас я работаю над ** @ use svg + animation **
 
 - 📫 Как со мной связаться **a.belov444@gmail.com**
 
