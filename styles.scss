@@ -1,0 +1,49 @@
+@use "./animation";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(225, 220, 220);
+  margin: 10px;
+}
+.homework12 {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.rect {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation: rect 4s ease-out infinite;
+}
+.circle {
+  @extend .rect;
+  animation: circle 4s step-end;
+}
+.text {
+  @extend .rect;
+  margin-top: 300px;
+  animation: text 4s ease-in infinite;
+}
+.line {
+  @extend .rect;
+  animation: line 10s ease-in-out;
+}
+.ellipse {
+  margin-top: 600px;
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap;
+  gap: 10px;
+  @extend .rect;
+  animation: ellipse 4s infinite;
+}

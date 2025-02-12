@@ -1,0 +1,122 @@
+@keyframes rect {
+  0% {
+    right: 0;
+    top: 0;
+  }
+  25% {
+    right: 200px;
+    top: 0;
+  }
+  50% {
+    right: 200px;
+    top: 200px;
+  }
+  75% {
+    right: 0;
+    top: 200px;
+  }
+  100% {
+    right: 0;
+    top: 0;
+  }
+}
+@keyframes circle {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: 200px;
+    top: 0;
+  }
+  50% {
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    left: 0;
+    top: 200px;
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+@keyframes text {
+  0% {
+    transform: scale(1);
+    fill: red;
+  }
+  100% {
+    transform: scale(3);
+    fill: rgb(22, 8, 129);
+  }
+}
+@keyframes line {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 1000px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes ellipse {
+  0%, 100% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(225, 220, 220);
+  margin: 10px;
+}
+
+.homework12 {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.rect, .ellipse, .line, .text, .circle {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation: rect 4s ease-out infinite;
+}
+
+.circle {
+  animation: circle 4s step-end;
+}
+
+.text {
+  margin-top: 300px;
+  animation: text 4s ease-in infinite;
+}
+
+.line {
+  animation: line 10s ease-in-out;
+}
+
+.ellipse {
+  margin-top: 600px;
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap;
+  gap: 10px;
+  animation: ellipse 4s infinite;
+}/*# sourceMappingURL=styles.css.map */
